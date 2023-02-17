@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MarsExpedition {
+public abstract class MarsExpedition {
     public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
 
@@ -105,5 +105,11 @@ public class MarsExpedition {
                 + "will be exploring Mars using a " + vehicle + "."
                 + "\nYour exploration mission begins now!"
                 + "\nGood Luck!!");
+            Thread.sleep(500);
+
+    FindingsList findingsList = new FindingsList(name);
+
+
     }
+
 }
